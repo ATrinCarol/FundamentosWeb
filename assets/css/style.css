@@ -1,6 +1,6 @@
-/* Estilos da página index.html */
+/* Estilos gerais */
 
-*{
+* {
     margin: 0px;
 }
 
@@ -9,19 +9,67 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 0);
     background-image: url(https://i.imgur.com/DbRvMcx.jpg);
-    height: 950px;
+    height: 1000px;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    position: relative;
+}
+
+li {
+    color: black;
+    padding-left: 60px;
+    font-size: 23px;
+}
+
+li:hover {
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.322);
+    backdrop-filter: blur(10px);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
 }
 
 .container {
     display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos da página index.html */
+
+.containerindex {
+    display: flex;
+    flex-flow: row;
     background-color: rgba(27, 15, 4, 0.747);
 }
 
-.container>div {
+.containerindex>div {
     background-color: #d3d3bcc5;
     margin: 23px;
     padding: 20px;
@@ -36,43 +84,32 @@ body {
     margin-top: 20px;
 }
 
-.menunav {
+.menunav { 
     display: flex;
-    margin: 10px;
     background-color: rgba(128, 128, 128, 0.322);
     backdrop-filter: blur(10px);
-}
-
-li {
-    color: black;
-    padding-left: 60px;
-    font-size: 20px;
-}
-
-li:hover {
-    color: whitesmoke;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 1%; 
 }
 
 .vermais {
     color: rgba(36, 21, 4, 0.829);
     text-decoration-line: underline;
+    margin-bottom: 50px;
 }
 
 .vermais:hover {
     color: whitesmoke;
 }
 
+.br-30 {
+    border-radius: 5%;
+}
+
 /* Estilos da página contatos.html */
 
 .contatos {
-    text-align: center;
-    background-size: auto;
-    backdrop-filter: blur(20px);
+    text-align: right;
+    background-size: cover;
+    font-size: 20px;
+}
