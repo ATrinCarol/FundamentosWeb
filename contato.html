@@ -21,7 +21,7 @@
                     <li>CONTATO</li>
                 </a>
                 <a href="historia.html">
-                    <li>HISTORIA</li>
+                    <li>HISTÓRIA</li>
                 </a>
             </div>
         </ul>
@@ -29,50 +29,66 @@
 
 
     <div class="contatos">
-        <h2>Contatos</h2><br>
+        <h2 class="corclara mt-30">Contatos</h2><br>
         <ul><b>
                 <a href="https://www.corinthians.com.br/futebol/feminino/elenco">
-                    <li>Site Oficial</li>
+                    <li class="licontatos">Site Oficial</li>
                 </a>
                 <a href="https://www.facebook.com/CorinthiansFeminino">
-                    <li>Facebook</li>
+                    <li class="licontatos">Facebook</li>
                 </a>
                 <a href="https://www.instagram.com/corinthiansfutebolfeminino/">
-                    <li>Instagram</li>
+                    <li class="licontatos">Instagram</li>
                 </a>
                 <a href="https://www.meutimao.com.br/corinthians-feminino">
-                    <li>Outras informações</li>
+                    <li class="licontatos mb-30">Outras informações</li>
                 </a>
         </ul> </b>
     </div>
 
-    <h2>Fale conosco:</h2>
+    <h2 class="faleconosco">Fale conosco</h2>
 
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" placeholder="Digite seu nome aqui">
-        <br><br>
-        <!--Obs: em boas práticas não usamos esse monte de <br> para pular linhas-->
+    <p class="mt-30"></p>
 
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" placeholder="Digite seu email aqui">
-        <br><br>
+    <div class="containercontato">
+        <form>
+            <label class="corclara" for="nome">Nome:</label>
+            <p class="mb-10"></p>
+            <input type="text" id="nome" class="bordapreta tminput" placeholder="Digite seu nome aqui" onkeyup="validaNome()">
+            <div id="txtNome"></div>
+            <p class="mb-30"></p>
 
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
-        <br><br>
+            <!-- Obs: em boas práticas não usamos esse monte de <br> para pular linhas.
+            Verificar agora se é tudo bem utilizar esse monte de <p class="mb-10"></p>.
+            Porque não funcionou colocando essa classe dntro do label. -->
 
-        <button>Enviar</button>
-    </form>
+            <label class="corclara" for="email">Email:</label>
+            <p class="mb-10"></p>
+            <input type="text" id="email" class="bordapreta tminput" placeholder="Digite seu email aqui" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+            <p class="mb-30"></p>
 
-    <h2>Localização:</h2>
-    <p>Rua São Jorge, 777</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117127.26590266505!2d-46.72217358730971!3d-23.4522728523995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee31dbf9d31%3A0xbb98c8ac09d3a438!2sSport%20Club%20Corinthians%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1655835336277!5m2!1spt-BR!2sbr"
-        width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <label class="corclara" for="assunto">Assunto:</label>
+            <p class="mb-10"></p>
+            <textarea name="assunto" id="assunto" class="bordapreta tminput" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
+            <p class="mb-10"></p>
 
-        <footer class="pa-60"><b>Todos os direitos reservados: Caroline Trindade &copy;</b></footer>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+        <div>
+            <h2 class="mb-30 corclara">Localização:</h2>
+            <p class="mb-10 corclara">Rua São Jorge, 777</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117127.26590266505!2d-46.72217358730971!3d-23.4522728523995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ee31dbf9d31%3A0xbb98c8ac09d3a438!2sSport%20Club%20Corinthians%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1655835336277!5m2!1spt-BR!2sbr"
+                width="400" height="250" class="bordapreta" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+        </div>
+    </div>
+
+    <footer><b>Todos os direitos reservados: Caroline Trindade &copy;</b></footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 

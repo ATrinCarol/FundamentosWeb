@@ -15,6 +15,20 @@ body {
     background-size: cover;
 }
 
+.corclara{
+    color:#d1ccc0 ;
+}
+
+.licontatos {
+    color: #d1ccc0;
+    padding-left: 60px;
+    font-size: 23px;
+}
+
+.licontatos:hover {
+    color:black;
+}
+
 li {
     color: black;
     padding-left: 60px;
@@ -50,15 +64,16 @@ footer {
     margin-bottom: 30px;
 }
 
-.mt-30 {
-    margin-top: 30px;
+.mb-1{
+    margin-bottom: 1px;
 }
 
-.container {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
 }
 
 /* Estilos da página index.html */
@@ -112,4 +127,39 @@ footer {
     text-align: right;
     background-size: cover;
     font-size: 20px;
+    padding-right: 5%;
+}
+
+.containercontato {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    background-color: rgba(27, 15, 4, 0.747);
+}
+
+.faleconosco {
+    text-align: center;
+    font-size: 30px;
+    color: #d1ccc0;
+    border: 2px solid black;
+}
+
+.bordapreta {
+    border: 2px solid black;
+}
+
+/* Estilos da página historia.html */
+
+.center {
+    text-align: center;
+}
+
+.textohistoria {
+    background-color: rgba(0, 0, 0, 0.705);
+    color:#d1ccc0;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;    
 }
